@@ -1,0 +1,108 @@
+/* ===== PAGE LAYOUT ===== */
+.login-page {
+  min-height: 100vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.15), transparent 60%),
+    linear-gradient(135deg,  #ff5722, #ff5722);
+}
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+  margin: auto;
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  border-radius: 22px;
+  padding: 35px 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  animation: slideUp 0.9s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== BRAND ===== */
+.brand h2 {
+  font-weight: 800;
+  color: #f84626;
+  text-align: center;
+  margin-left: 70px;
+}
+
+/* ===== INPUTS ===== */
+.form-control {
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+
+.form-control:focus {
+  border-color: #ff2e63;
+  box-shadow: 0 0 0 0.15rem rgba(255, 46, 99, 0.25);
+}
+
+/* ===== PASSWORD ICON ===== */
+.eye-icon {
+  cursor: pointer;
+  background: transparent;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.btn-login {
+  background: linear-gradient(135deg,  #ff5722, #ff5722);
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== LINKS ===== */
+.link-soft {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link-soft:hover {
+  color: #f84626;
+}
+
+.link-strong {
+  color: #e46217;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-strong:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px 20px;
+  }
+}

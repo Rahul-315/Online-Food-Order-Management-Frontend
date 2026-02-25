@@ -1,0 +1,94 @@
+/* Container Background */
+.instamart-container {
+  background: linear-gradient(180deg,  #ff5722,  #ff5722);
+  min-height: 100vh;
+}
+
+/* Title */
+.instamart-title {
+    margin-top: 20px;
+  font-size: 3rem;
+  color: #2c3e50;
+}
+
+/* Card Styling */
+.instamart-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.instamart-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.instamart-card:hover .icon-circle {
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* Card Title */
+.instamart-card .card-title {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Card Text */
+.instamart-card .card-text {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .instamart-title {
+    font-size: 2.2rem;
+  }
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.8rem;
+  }
+}

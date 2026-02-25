@@ -1,0 +1,133 @@
+/* PAGE WRAPPER */
+.quickbite-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height to push footer */
+}
+
+/* HERO */
+.quickbite-one-hero {
+  flex: 1; /* hero takes remaining space */
+  background: linear-gradient(135deg, #ff5722,  #ff5722);
+  position: relative;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; /* center content vertically */
+  padding: 60px 20px; /* reduce bottom padding to avoid extra gap */
+}
+
+/* HERO CONTENT */
+.hero-content {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* FLOATING ICONS */
+.floating-icon {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.6;
+  animation: float 12s linear infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+  100% { transform: translateY(0px) rotate(360deg); }
+}
+.icon-0 { top: 10%; left: 5%; animation-duration: 10s; }
+.icon-1 { top: 30%; left: 90%; animation-duration: 14s; }
+.icon-2 { top: 70%; left: 15%; animation-duration: 12s; }
+.icon-3 { top: 50%; left: 50%; animation-duration: 16s; }
+.icon-4 { top: 20%; left: 70%; animation-duration: 11s; }
+.icon-5 { top: 80%; left: 80%; animation-duration: 13s; }
+
+/* HERO TEXT */
+.quickbite-one-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.quickbite-one-hero p {
+  font-size: 1.3rem;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  color: #161413;
+}
+
+/* MEMBERSHIP CARD */
+.membership-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.membership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* BENEFIT ITEMS */
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.benefit-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.benefit-icon {
+  font-size: 1.5rem;
+}
+
+/* PRICE & CTA BUTTON */
+.membership-price h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.btn-join {
+  background: linear-gradient(135deg,  #ff5722,  #ff5722);
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.3s ease;
+}
+.btn-join:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  filter: brightness(1.1);
+}
+
+/* FOOTER FIX */
+footer {
+  margin-top: auto; /* pushes footer to bottom */
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .quickbite-one-hero h1 { font-size: 2.5rem; }
+  .quickbite-one-hero p { font-size: 1.1rem; }
+}
+@media (max-width: 768px) {
+  .quickbite-one-hero { padding: 50px 15px; }
+  .membership-card { padding: 30px; }
+  .benefit-item { font-size: 0.9rem; padding: 10px 15px; }
+  .btn-join { padding: 12px 30px; }
+}
+@media (max-width: 576px) {
+  .quickbite-one-hero h1 { font-size: 2rem; }
+  .quickbite-one-hero p { font-size: 1rem; }
+  .benefit-item { flex-direction: column; gap: 10px; }
+}

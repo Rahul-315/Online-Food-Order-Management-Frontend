@@ -1,0 +1,223 @@
+/* ================= ADMIN PAGE WRAPPER ================= */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.admin-page-wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.admin-section {
+  flex: 1;
+}
+
+.admin-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #f3f4f6;
+}
+
+/* ================= ADMIN SECTION ================= */
+.admin-section {
+  background: #f3f4f6;
+  padding: 24px;
+  border-radius: 14px;
+
+  /* NEW */
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+/* REMOVE BOOTSTRAP ROW SIDE GAPS */
+.admin-section .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.admin-section h4 {
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+/* ================= ICON ACTION ================= */
+.icon-action {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #e5e7eb;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.icon-action:hover {
+  background: #d1d5db;
+  transform: scale(1.05);
+}
+
+.icon-action.delete {
+  background: #f1f5f9;
+  color: #7f1d1d;
+}
+
+.icon-action.delete:hover {
+  background: #e5e7eb;
+}
+
+/* ================= ORDER CARD ================= */
+.order-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* ================= MENU IMAGE ================= */
+.menu-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-image-placeholder {
+  width: 100%;
+  height: 140px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.menu-image-preview {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* ================= CARD TEXT ================= */
+.order-card h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.order-card small {
+  color: #6b7280;
+}
+
+.order-card strong {
+  color: #065f46;
+  font-weight: 600;
+}
+
+/* ================= STATUS PILL ================= */
+.status-pill {
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  border-radius: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.status-pill.completed {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+
+.status-pill.cancelled {
+  background: #fef2f2;
+  color: #7f1d1d;
+  border-color: #fecaca;
+}
+
+/* ================= MODAL ================= */
+.modal-content {
+  border-radius: 14px;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #111827;
+}
+
+.modal-body input,
+.modal-body select {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+.modal-body input:focus,
+.modal-body select:focus {
+  border-color: #9ca3af;
+  box-shadow: none;
+}
+
+.modal-body button {
+  background: #374151;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.modal-body button:hover {
+  background: #1f2937;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .admin-section {
+    padding: 16px;
+  }
+
+  .order-card {
+    padding: 14px;
+  }
+}
+
+/* ================= WIDE SCREEN CARD FIT (NEW) ================= */
+@media (min-width: 992px) {
+  .admin-section .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .admin-section .col-md-3 {
+    width: 20%;
+  }
+}
+
+/* ================= CONTAINER FIX (IF USED) ================= */
+.container {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

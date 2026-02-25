@@ -1,0 +1,58 @@
+.admin-section {
+  width: 100%;
+  padding-top: 24px;
+}
+
+.admin-section h3 {
+  font-weight: 600;
+}
+
+.admin-section .card {
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-section .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.admin-section .card h5 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.admin-section .card p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.admin-section .card .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  border-radius: 16px;
+}
+
+.modal-header .modal-title {
+  font-weight: 600;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.modal-footer .btn {
+  min-width: 90px;
+}
+
+@media (max-width: 768px) {
+  .admin-section {
+    padding-top: 16px;
+  }
+}

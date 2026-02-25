@@ -1,0 +1,74 @@
+/* About Page Styles */
+.about-page {
+  background: #f1eeed; /* soft cream background */
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page heading */
+.about-page .text-center h1 {
+  font-size: 2.5rem;
+  color: #111827;
+}
+
+.about-page .text-center p {
+  font-size: 1.1rem;
+  color: #6b7280; /* muted text */
+}
+
+/* Who we are / What we do */
+.about-page h3.fw-semibold {
+  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.about-page p.text-muted {
+  font-size: 0.95rem;
+  color: #4b5563; /* slightly darker muted */
+}
+
+/* Cards for features */
+.about-page .card {
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-page .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.about-page .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Images */
+.about-page .img-fluid {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Spacing between rows */
+.about-page .row.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-page h1 {
+    font-size: 2rem;
+  }
+
+  .about-page h3.fw-semibold {
+    font-size: 1.3rem;
+  }
+
+  .about-page p {
+    font-size: 0.9rem;
+  }
+}

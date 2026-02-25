@@ -1,0 +1,265 @@
+/* ===== Careers Page Background ===== */
+.careers-page {
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+/* ===== HERO ===== */
+.careers-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff5722,  #ff5722); /* purple-blue gradient */
+  color: #fff;
+  padding: 140px 20px 100px 20px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+/* ===== Floating Circles / Particles ===== */
+.careers-hero::before,
+.careers-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  animation: floatCircle 20s linear infinite;
+}
+
+.careers-hero::before {
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  left: 15%;
+  animation-duration: 25s;
+}
+
+.careers-hero::after {
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  right: 10%;
+  animation-duration: 18s;
+}
+
+@keyframes floatCircle {
+  0% { transform: translateY(0) translateX(0) rotate(0deg); }
+  50% { transform: translateY(-30px) translateX(20px) rotate(180deg); }
+  100% { transform: translateY(0) translateX(0) rotate(360deg); }
+}
+
+/* ===== Floating Stars / Small Dots ===== */
+.careers-hero .particle {
+  position: absolute;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background: rgba(255,255,255,0.25);
+  animation: twinkle 1s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { transform: translateY(-20px) scale(1); opacity: 0.2; }
+  50% { transform: translateY(-10px) scale(1.2); opacity: 0.8; }
+  100% { transform: translateY(-30px) scale(1); opacity: 0.2; }
+}
+
+/* ===== HERO TEXT ===== */
+.careers-hero h1,
+.careers-hero p {
+  position: relative;
+  z-index: 2;
+  animation: fadeUp 1s ease forwards;
+}
+
+.careers-hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.careers-hero p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  text-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===== WHY QUICKBITE ===== */
+.why-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.why-list li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  padding-left: 25px;
+  position: relative;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.why-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #198754;
+  font-weight: bold;
+}
+
+.why-list li:hover {
+  transform: translateX(5px);
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== ROLE CARDS ===== */
+.role-card-advanced {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 25px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.role-card-advanced:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== ROLE BADGES ===== */
+.role-badge {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #fff;
+  background: linear-gradient(90deg, #198754, #20c997);
+}
+
+.role-badge.tech {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+}
+
+.role-badge.backend {
+  background: linear-gradient(90deg, #6f42c1, #d63384);
+}
+
+.role-badge.operations {
+  background: linear-gradient(90deg, #fd7e14, #ffc107);
+}
+
+.role-badge.support {
+  background: linear-gradient(90deg, #20c997, #0dcaf0);
+}
+
+/* ===== ROLE META ===== */
+.role-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #495057;
+  margin-top: auto;
+}
+
+/* Add icons to meta */
+.role-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+/* ===== ROLE DESCRIPTION ===== */
+.role-desc {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin: 12px 0 15px 0;
+}
+
+/* ===== CTA BUTTON ===== */
+button.btn-success {
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button.btn-success:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #198754, #20c997);
+}
+
+/* ===== MODAL CUSTOM ===== */
+.modal-content {
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+/* ===== ANIMATIONS (AOS READY) ===== */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .careers-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .careers-hero p {
+    font-size: 1rem;
+  }
+
+  .role-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

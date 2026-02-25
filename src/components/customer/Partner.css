@@ -1,0 +1,111 @@
+.partner-container {
+  max-width: 1200px;
+  margin-top: 150px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.partner-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.partner-header h1 {
+    margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ff4b2b; /* bright orange for energy */
+}
+
+.partner-header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.partner-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #ff4b2b;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.partner-btn:hover {
+  background: #ff6b4b;
+  transform: translateY(-2px);
+}
+
+.partner-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ff4b2b;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.partner-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 300px;
+  background: #fffbf7;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+.info-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff4b2b;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}

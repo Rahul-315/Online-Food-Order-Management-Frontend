@@ -1,0 +1,75 @@
+.staff-navbar {
+  background: #1f2937;
+  padding: 0.6rem 1.2rem;
+  z-index: 1000;
+  border-bottom: 1px solid #374151;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staff-brand {
+  color: #f9fafb !important;
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.staff-nav-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.staff-nav-link:hover {
+  background: #374151;
+  color: #ffffff !important;
+}
+
+.staff-nav-link.active {
+  background: #4b5563;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.staff-username {
+  font-size: 0.9rem;
+  color: #f9fafb !important;
+  margin-right: 10px;
+}
+
+.staff-logout-btn {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.staff-logout-btn:hover {
+  background: #b91c1c !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .staff-brand {
+    font-size: 1.2rem;
+  }
+
+  .staff-nav-link {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+
+  .staff-logout-btn {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+}

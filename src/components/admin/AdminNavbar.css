@@ -1,0 +1,48 @@
+.navbar {
+  padding: 0.6rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+}
+
+.navbar .form-control {
+  max-width: 200px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.navbar svg {
+  transition: transform 0.2s ease;
+}
+
+.navbar svg:hover {
+  transform: scale(1.05);
+}
+
+.navbar .btn-outline-warning {
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .navbar .form-control {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,60 @@
+/* Register.css */
+.register-page {
+  background-color:  #ff5722; /* Orange background */
+  min-height: 100vh;
+  padding-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.register-card {
+  background-color: #fff; /* White card */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  padding: 30px;
+}
+
+.register-card h3 {
+  color: #333;
+}
+
+.register-card p {
+  color: #666;
+}
+
+.register-card .form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+.register-card .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+  border-color: #FFA500;
+}
+
+.register-card .btn-success {
+  background-color: #ff5722; /* Darker orange */
+  border: none;
+}
+
+.register-card .btn-success:hover {
+  background-color: #ff5722;
+}
+
+.register-card small.text-danger {
+  font-size: 0.85rem;
+}
+
+.register-card .progress-bar.bg-danger {
+  background-color: #FF4500; /* Weak password */
+}
+
+.register-card .progress-bar.bg-warning {
+  background-color: #FFA500; /* Medium password */
+}
+
+.register-card .progress-bar.bg-success {
+  background-color: #32CD32; /* Strong password */
+}

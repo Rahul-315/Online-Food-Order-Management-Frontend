@@ -1,0 +1,102 @@
+.qb-footer {
+  background-color: #02060c;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+/* APP BANNER */
+.footer-app-banner {
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom: 1px solid #2b2f36;
+}
+
+.footer-app-banner h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.store-buttons img {
+  height: 48px;
+  margin: 0 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* CONTENT */
+.footer-content {
+  padding: 50px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+}
+
+.footer-content h6 {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content li {
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: #b5b5b5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-content a:hover {
+  color: #ffffff;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  padding: 20px 80px;
+  border-top: 1px solid #2b2f36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #b5b5b5;
+}
+
+/* SOCIAL ICONS */
+.social-links a {
+  font-size: 22px;
+  color: #b5b5b5;
+  margin-left: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 40px 30px;
+  }
+
+  .footer-bottom {
+    padding: 20px 30px;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,152 @@
+/* ================= ADMIN RESTAURANTS WRAPPER ================= */
+.admin-restaurants {
+  background-color: #ffffff !important;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+/* ================= RESTAURANT CARD ================= */
+.restaurant-card {
+  background-color: #ffffff !important; /* PURE WHITE */
+  border-radius: 14px;
+  padding: 16px;
+  height: 100%;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08); /* subtle grey shadow */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb; /* subtle border */
+}
+
+/* Hover effect */
+.restaurant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14); /* stronger shadow on hover */
+}
+
+/* ================= IMAGE ================= */
+.restaurant-image,
+.restaurant-card img {
+  width: 100% !important;
+  height: 140px !important;
+  object-fit: cover !important;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* Placeholder */
+.restaurant-image-placeholder {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  color: hsl(223, 19%, 93%);
+}
+
+/* ================= TEXT ================= */
+.restaurant-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant-id {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.restaurant-card p {
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.restaurant-card .desc {
+  font-size: 0.8rem;
+  color: #6b7280;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.actions .btn {
+  flex: 1;
+  font-size: 0.75rem;
+  padding: 6px 8px;
+}
+
+/* ================= IMAGE PREVIEW ================= */
+.image-preview {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ================= ADD BUTTON ================= */
+.add-restaurant-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* ================= 5 CARDS PER ROW ================= */
+.col-md-5col {
+  flex: 0 0 15%;
+  max-width: 20%;
+  padding: 8px;
+}
+
+/* Row spacing */
+.admin-restaurants .row {
+  row-gap: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1200px) {
+  .col-md-5col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-5col {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-5col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-md-5col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

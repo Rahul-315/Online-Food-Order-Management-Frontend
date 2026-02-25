@@ -1,0 +1,20 @@
+/* ================= ADMIN DASHBOARD ================= */
+
+/* Prevent layout shift when scrollbar appears */
+html {
+  overflow-y: scroll;
+}
+
+/* Main dashboard background */
+.admin-dashboard {
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+/* Inner content wrapper (below navbar) */
+.admin-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
